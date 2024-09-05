@@ -1,0 +1,1 @@
+Nama : Aulia Firda Syafira
