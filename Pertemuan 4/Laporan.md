@@ -28,7 +28,7 @@ void main() {
 Kode Dart tersebut membuat sebuah list dengan tiga elemen: [1, 2, 3]. Program kemudian memeriksa apakah panjang daftar adalah 3 dan elemen kedua bernilai 2, menggunakan pernyataan assert. Setelah memverifikasi kebenaran kondisi tersebut, program mencetak panjang daftar (3) dan elemen kedua (2). Selanjutnya, nilai elemen kedua diubah menjadi 1, dan program kembali memeriksa kebenarannya dengan assert, lalu mencetak nilai elemen kedua yang telah diubah (1). Jika ada pernyataan assert yang salah, program akan error.
 
 ## **Langkah 3:**
-Ubah kode pada langkah 1 menjadi variabel final yang mempunyai index = 5 dengan default value = null. Isilah nama dan NIM Anda pada elemen index ke-1 dan ke-2. Lalu print dan capture hasilnya.
+Ubah kode pada langkah 1 menjadi variabel final yang mempunyai index = 5 dengan default value = null. Isilah nama dan NIM Anda pada elemen index ke-1 dan ke-2. 
 
 ```
 void main() {
@@ -52,9 +52,10 @@ void main() {
 }
 ```
 ## **Langkah 2:**
-Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
 
 <img src=img/praktikum2_a.png>
+
+Tidak ada error.
 
 ## **Langkah 3:**
 ```
@@ -73,7 +74,29 @@ void main() {
 ```
 <img src=img/praktikum2_b.png>
 
-## P2 BELUM SELESAI
+* Tambahkan elemen nama dan NIM Anda pada kedua variabel Set tersebut dengan dua fungsi berbeda yaitu .add() dan .addAll(). Untuk variabel Map dihapus.
+```
+void main() {
+  var halogens = {'fluorine', 'chlorine', 'bromine', 'iodine', 'astatine'};
+  print(halogens);
+
+  var names1 = <String>{};
+  Set<String> names2 = {}; // This works, too.
+  var names3 = {}; // Creates a map, not a set.
+
+  names1.add('Aulia Firda Syafira');
+  names1.add('2241720047');
+
+  names2.addAll({'Aulia Firda Syafira', '2241720047'});
+
+  print(names1);
+  print(names2);
+  print(names3);
+}
+```
+<img src=img/praktikum2_c.png>
+
+
 
 # Praktikum 3: Eksperimen Tipe Data Maps
 ## **Langkah 1:**
@@ -97,7 +120,6 @@ void main() {
 }
 ```
 ## **Langkah 2:**
-Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
 
 <img src=img/praktikum3_a.png>
 
@@ -115,7 +137,6 @@ void main() {
 }
 ```
 ## **Langkah 2:**
-Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
 <img src=img/praktikum4_a.png>
 
 Error terjadi karena kesalahan saat mencetak list1 yang tidak didefinisikan. Berikut adalah penulisan kode program yang benar:
@@ -147,11 +168,10 @@ void main() {
 }
 ```
 
-Apa yang terjadi ? Jika terjadi error, silakan perbaiki
 
 <img src=img/praktikum4_c.png>
 
-* Setelah diperbaiki errornya
+Setelah diperbaiki errornya:
 ```
 void main() {
   List<int?> list1 = [1, 2, 3];
@@ -216,9 +236,10 @@ void main() {
   print(nav);
 }
 ```
+<img src=img/praktikum4_m.png>
 
 Error terjadi karena variabel promoActive belum didefinisikan. Berikut adalah penulisan kode program yang benar:
-* True
+* Jika promoActive = True
 ```
   var promoActive = true;
   var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
@@ -226,14 +247,13 @@ Error terjadi karena variabel promoActive belum didefinisikan. Berikut adalah pe
 ```
 <img src=img/praktikum4_g.png>
 
-* False
+* Jika promoActive = False
 ```
   var promoActive = false;
   var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
   print(nav);
 ```
 <img src=img/praktikum4_h.png> 
-ini gambarnya masih load
 
 
 ## **Langkah 5:**
@@ -372,3 +392,116 @@ void main() {
 }
 ```
 <img src=img/praktikum5_f.png>
+
+# Tugas Praktikum
+
+1. Silakan selesaikan Praktikum 1 sampai 5, lalu dokumentasikan berupa screenshot hasil pekerjaan Anda beserta penjelasannya!
+**Jawab:**
+Semua praktikum sudah dikerjakan di atas.
+
+2. Jelaskan yang dimaksud Functions dalam bahasa Dart!
+**Jawab:**
+Functions dalam bahasa Dart adalah blok kode yang digunakan untuk melakukan tugas tertentu. Functions bisa menerima input (parameter) dan mengembalikan output (return value). Functions membuat kode lebih terstruktur dan dapat digunakan kembali (reusable).
+
+3. Jelaskan jenis-jenis parameter di Functions beserta contoh sintaksnya!
+**Jawab:**
+* Positional Parameters: Parameter ini harus diisi secara berurutan.
+```
+void printNama(String nama) {
+  print(nama);
+}
+void main() {
+  printNama('Aulia');
+}
+```
+* Optional Positional Parameters: Ditandai dengan kurung siku [] dan bisa tidak diisi.
+```
+void printInfo(String nama, [int? umur]) {
+  print('Nama: $nama, Umur: ${umur ?? 'Tidak diketahui'}');
+}
+void main() {
+  printInfo('Aulia');
+  printInfo('Aulia', 21);
+}
+```
+* Named Parameters: Parameter yang diberi nama dan bisa tidak diisi, tapi jika diberi tanda required, parameter wajib diisi.
+```
+void printDetail({required String nama, int? umur}) {
+  print('Nama: $nama, Umur: ${umur ?? 'Tidak diketahui'}');
+}
+void main() {
+  printDetail(nama: 'Aulia', umur: 21);
+}
+```
+* Default Parameters: Parameter yang memiliki nilai default jika tidak diisi.
+```
+void greet({String nama = 'User'}) {
+  print('Hello, $nama');
+}
+void main() {
+  greet();
+  greet(nama: 'Aulia');
+}
+```
+
+4. Jelaskan maksud Functions sebagai first-class objects beserta contoh sintaknya!
+**Jawab:**
+Functions bisa disimpan dalam variabel, dikirim sebagai parameter, atau dikembalikan dari function lain.
+```
+void printNama(String nama) {
+  print(nama);
+}
+
+void main() {
+  var f = printNama;  // Function disimpan dalam variabel
+  f('Aulia');  // Memanggil function melalui variabel
+}
+```
+
+5. Apa itu Anonymous Functions? Jelaskan dan berikan contohnya!
+**Jawab:**
+Anonymous functions adalah function tanpa nama. Biasanya digunakan sebagai argumen function lain, terutama dalam pemrograman fungsional atau callback.
+```
+void main() {
+  var angka = [1, 2, 3, 4];
+  angka.forEach((item) {
+    print(item);  // Function tanpa nama
+  });
+}
+```
+
+6. Jelaskan perbedaan Lexical scope dan Lexical closures! Berikan contohnya!
+**Jawab:**
+* Lexical Scope: Ruang lingkup variabel ditentukan saat kode ditulis (bukan saat eksekusi). Artinya, variabel yang didefinisikan dalam sebuah scope hanya bisa diakses di dalam scope tersebut.
+```
+void main() {
+  int x = 10;  // Lexical scope x ada di dalam fungsi main
+  void tampil() {
+    print(x);  // Bisa akses x karena ada di dalam lexical scope
+  }
+  tampil();
+}
+```
+* Lexical Closure: Function yang mengingat variabel dari scope luar meskipun scope luar sudah selesai dieksekusi.
+```
+Function createCounter() {
+  int count = 0;  // Lexical scope
+  return () {  // Closure mengingat nilai count
+    count++;
+    return count;
+  };
+}
+void main() {
+  var counter = createCounter();
+  print(counter());  // Output: 1
+  print(counter());  // Output: 2
+}
+```
+
+7. Jelaskan dengan contoh cara membuat return multiple value di Functions!
+**Jawab:**
+Dart tidak mendukung pengembalian beberapa nilai secara langsung, tapi kita bisa mengakali dengan mengembalikan data dalam bentuk List, Map, atau class.
+
+8. Kumpulkan berupa link commit repo GitHub pada tautan yang telah disediakan di grup Telegram!
+**Jawab:**
+Link GitHub sudah dikumpulkan di LMS.
