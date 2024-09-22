@@ -511,7 +511,7 @@ void main() {
 `7.` Jelaskan dengan contoh cara membuat return multiple value di Functions!
 
 **Jawab:**
-Dart tidak mendukung pengembalian beberapa nilai secara langsung, tapi kita bisa mengakali dengan mengembalikan data dalam bentuk List, Map, atau class.
+Dart tidak mendukung pengembalian beberapa nilai secara langsung, tapi bisa diakali dengan mengembalikan data dalam bentuk List, Map, atau class.
 
 `8.` Kumpulkan berupa link commit repo GitHub pada tautan yang telah disediakan di grup Telegram!
 
