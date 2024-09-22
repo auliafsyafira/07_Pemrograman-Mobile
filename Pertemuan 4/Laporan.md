@@ -55,7 +55,7 @@ void main() {
 
 <img src=img/praktikum2_a.png>
 
-Tidak ada error.
+Kode ini mendefinisikan sebuah set bernama halogens yang berisi beberapa elemen: 'fluorine', 'chlorine', 'bromine', 'iodine', dan 'astatine'. Set dalam Dart adalah kumpulan elemen unik yang tidak berurutan dan tidak memiliki indeks. Output dari program ini akan mencetak semua elemen dalam set.
 
 ## **Langkah 3:**
 ```
@@ -306,6 +306,8 @@ void main() {
 ## **Langkah 2:**
 <img src=img/praktikum5_a.png>
 
+Kode tersebut mendefinisikan sebuah tuple bernama record yang berisi dua jenis nilai: positional dan named values. Tuple ini memiliki dua nilai positional yaitu 'first' dan 'last', serta dua named values yaitu a: 2 dan b: true. Positional values diakses berdasarkan urutannya, sedangkan named values diakses menggunakan nama yang diberikan. Saat print(record) dijalankan, isi dari tuple tersebut akan dicetak dalam bentuk (first, a: 2, b: true, last), yang menunjukkan semua nilai yang terkandung dalam tuple tersebut.
+
 ## **Langkah 3:**
 ```
 void main() {
@@ -337,6 +339,8 @@ void main() {
 }
 ```
 <img src=img/praktikum5_c.png>
+
+Inisialisasi field nama dan NIM Anda pada variabel record mahasiswa di atas. 
 
 ```
 void main() {
@@ -395,17 +399,20 @@ void main() {
 
 # Tugas Praktikum
 
-1. Silakan selesaikan Praktikum 1 sampai 5, lalu dokumentasikan berupa screenshot hasil pekerjaan Anda beserta penjelasannya!
+`1.` Silakan selesaikan Praktikum 1 sampai 5, lalu dokumentasikan berupa screenshot hasil pekerjaan Anda beserta penjelasannya!
+
 **Jawab:**
 Semua praktikum sudah dikerjakan di atas.
 
-2. Jelaskan yang dimaksud Functions dalam bahasa Dart!
+`2.` Jelaskan yang dimaksud Functions dalam bahasa Dart!
+
 **Jawab:**
 Functions dalam bahasa Dart adalah blok kode yang digunakan untuk melakukan tugas tertentu. Functions bisa menerima input (parameter) dan mengembalikan output (return value). Functions membuat kode lebih terstruktur dan dapat digunakan kembali (reusable).
 
-3. Jelaskan jenis-jenis parameter di Functions beserta contoh sintaksnya!
+`3.` Jelaskan jenis-jenis parameter di Functions beserta contoh sintaksnya!
+
 **Jawab:**
-* Positional Parameters: Parameter ini harus diisi secara berurutan.
+* **Positional Parameters**: Parameter ini harus diisi secara berurutan.
 ```
 void printNama(String nama) {
   print(nama);
@@ -414,7 +421,7 @@ void main() {
   printNama('Aulia');
 }
 ```
-* Optional Positional Parameters: Ditandai dengan kurung siku [] dan bisa tidak diisi.
+* **Optional Positional Parameters**: Ditandai dengan kurung siku [] dan bisa tidak diisi.
 ```
 void printInfo(String nama, [int? umur]) {
   print('Nama: $nama, Umur: ${umur ?? 'Tidak diketahui'}');
@@ -424,7 +431,7 @@ void main() {
   printInfo('Aulia', 21);
 }
 ```
-* Named Parameters: Parameter yang diberi nama dan bisa tidak diisi, tapi jika diberi tanda required, parameter wajib diisi.
+* **Named Parameters**: Parameter yang diberi nama dan bisa tidak diisi, tapi jika diberi tanda required, parameter wajib diisi.
 ```
 void printDetail({required String nama, int? umur}) {
   print('Nama: $nama, Umur: ${umur ?? 'Tidak diketahui'}');
@@ -433,7 +440,7 @@ void main() {
   printDetail(nama: 'Aulia', umur: 21);
 }
 ```
-* Default Parameters: Parameter yang memiliki nilai default jika tidak diisi.
+* **Default Parameters**: Parameter yang memiliki nilai default jika tidak diisi.
 ```
 void greet({String nama = 'User'}) {
   print('Hello, $nama');
@@ -444,7 +451,8 @@ void main() {
 }
 ```
 
-4. Jelaskan maksud Functions sebagai first-class objects beserta contoh sintaknya!
+`4.` Jelaskan maksud Functions sebagai first-class objects beserta contoh sintaknya!
+
 **Jawab:**
 Functions bisa disimpan dalam variabel, dikirim sebagai parameter, atau dikembalikan dari function lain.
 ```
@@ -458,7 +466,8 @@ void main() {
 }
 ```
 
-5. Apa itu Anonymous Functions? Jelaskan dan berikan contohnya!
+`5.` Apa itu Anonymous Functions? Jelaskan dan berikan contohnya!
+
 **Jawab:**
 Anonymous functions adalah function tanpa nama. Biasanya digunakan sebagai argumen function lain, terutama dalam pemrograman fungsional atau callback.
 ```
@@ -470,9 +479,10 @@ void main() {
 }
 ```
 
-6. Jelaskan perbedaan Lexical scope dan Lexical closures! Berikan contohnya!
+`6.` Jelaskan perbedaan Lexical scope dan Lexical closures! Berikan contohnya!
+
 **Jawab:**
-* Lexical Scope: Ruang lingkup variabel ditentukan saat kode ditulis (bukan saat eksekusi). Artinya, variabel yang didefinisikan dalam sebuah scope hanya bisa diakses di dalam scope tersebut.
+* **Lexical Scope**: Ruang lingkup variabel ditentukan saat kode ditulis (bukan saat eksekusi). Artinya, variabel yang didefinisikan dalam sebuah scope hanya bisa diakses di dalam scope tersebut.
 ```
 void main() {
   int x = 10;  // Lexical scope x ada di dalam fungsi main
@@ -482,7 +492,7 @@ void main() {
   tampil();
 }
 ```
-* Lexical Closure: Function yang mengingat variabel dari scope luar meskipun scope luar sudah selesai dieksekusi.
+* **Lexical Closure**: Function yang mengingat variabel dari scope luar meskipun scope luar sudah selesai dieksekusi.
 ```
 Function createCounter() {
   int count = 0;  // Lexical scope
@@ -498,10 +508,12 @@ void main() {
 }
 ```
 
-7. Jelaskan dengan contoh cara membuat return multiple value di Functions!
+`7.` Jelaskan dengan contoh cara membuat return multiple value di Functions!
+
 **Jawab:**
 Dart tidak mendukung pengembalian beberapa nilai secara langsung, tapi kita bisa mengakali dengan mengembalikan data dalam bentuk List, Map, atau class.
 
-8. Kumpulkan berupa link commit repo GitHub pada tautan yang telah disediakan di grup Telegram!
+`8.` Kumpulkan berupa link commit repo GitHub pada tautan yang telah disediakan di grup Telegram!
+
 **Jawab:**
 Link GitHub sudah dikumpulkan di LMS.
