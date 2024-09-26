@@ -1,9 +1,9 @@
 # **Tugas Praktikum - Pertemuan 5**
-Nama : Aulia Firda Syafira
+* Nama : Aulia Firda Syafira
 
-NIM : 2241720047 (07)
+* NIM : 2241720047 (07)
 
-Kelas : TI-3G
+* Kelas : TI-3G
 
 
 # Praktikum 1: Membuat Project Flutter Baru
