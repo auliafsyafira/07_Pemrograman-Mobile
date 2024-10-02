@@ -303,4 +303,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+<img src=img/praktikum5_6.png>
+<img src=img/praktikum5_5.png>
 
+## Tugas Praktikum
