@@ -121,7 +121,7 @@ class MyApp extends StatelessWidget {
 
 **Jawab:**
 
-[namer_app](https://github.com/auliafsyafira/07_Pemrograman-Mobile/tree/main/Pertemuan%205)
+[Your first Flutter app - namer_app](https://github.com/auliafsyafira/07_Pemrograman-Mobile/tree/main/Pertemuan%205/namer_app)
 
 <img src=img/namer_app.gif>
 
