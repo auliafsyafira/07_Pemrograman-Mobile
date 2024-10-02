@@ -46,3 +46,10 @@ Karena sebelumnya saya sudah membuat repository, saya akan melanjutkan ke langka
 
 # Praktikum 5: Menerapkan Widget Material Design dan iOS Cupertino
 ## Langkah 1: Cupertino Button dan Loading Bar
+<img src=img/praktikum5_1.png>
+
+## Langkah 2: Floating Action Button (FAB)
+<img src=img/praktikum5_2.png>
+
+## Langkah 3: Scaffold Widget
+<img src=img/praktikum5_2.png>
