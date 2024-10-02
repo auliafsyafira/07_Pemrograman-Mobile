@@ -20,10 +20,12 @@ Kelas : TI-3G
 ## **Langkah 4:**
 <img src=img/praktikum1_4.png>
 
+
 # Praktikum 2: Menghubungkan Perangkat Android atau Emulator
 
 Di sini saya sudah menghubungkan aplikasi Android Studio dengan perangkat Android fisik.
 <img src=img/praktikum2_1.jpg>
+
 
 # Praktikum 3: Membuat Repository GitHub dan Laporan Praktikum
 
@@ -34,8 +36,11 @@ Karena sebelumnya saya sudah membuat repository, saya akan melanjutkan ke langka
 
 <img src=img/praktikum3_1.png>
 
+Kode diatas merupakan StatelessWidget yang berarti bahwa widget tersebut tidak dapat berubah setelah diinisialisasi, dan jika ada perubahan, satu-satunya cara untuk memperbarui tampilannya adalah dengan membuat ulang widget itu sendiri. StatelessWidget digunakan untuk tampilan yang statis atau tidak dipengaruhi oleh interaksi pengguna, seperti teks, ikon, atau gambar yang tetap.
+
 ## **Langkah 12:**
 <img src=img/praktikum3_2.png>
+
 
 # Praktikum 4: Menerapkan Widget Dasar
 ## **Langkah 1: Text Widget**
@@ -43,6 +48,7 @@ Karena sebelumnya saya sudah membuat repository, saya akan melanjutkan ke langka
 
 ## **Langkah 2: Image Widget**
 <img src=img/praktikum3_5.png>
+
 
 # Praktikum 5: Menerapkan Widget Material Design dan iOS Cupertino
 ## Langkah 1: Cupertino Button dan Loading Bar
