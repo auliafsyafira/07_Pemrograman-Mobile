@@ -11,7 +11,7 @@ class MyScaffoldWidget extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const MyHomePage(title: 'My Increment App'),
+      home: const MyHomePage(title: 'Aulia 2241720047'),
     );
   }
 }

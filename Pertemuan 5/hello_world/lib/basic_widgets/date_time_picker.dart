@@ -10,7 +10,7 @@ class MyDateTimePicker extends StatelessWidget { // Ganti nama kelas dari MyApp 
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Contoh Date Picker',
-      home: MyHomePage(title: 'Contoh Date Picker | Raden Rizki | 2141720064'),
+      home: MyHomePage(title: 'Date Picker Aulia 2241720047'),
     );
   }
 }

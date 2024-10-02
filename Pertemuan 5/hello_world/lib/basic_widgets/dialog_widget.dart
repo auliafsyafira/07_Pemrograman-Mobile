@@ -41,8 +41,8 @@ showAlertDialog(BuildContext context) {
 
   // set up the AlertDialog
   AlertDialog alert = AlertDialog(
-    title: const Text("My title"),
-    content: const Text("This is my message."),
+    title: const Text("2241720047"),
+    content: const Text("Aulia Firda Syafira."),
     actions: [
       okButton,
     ],

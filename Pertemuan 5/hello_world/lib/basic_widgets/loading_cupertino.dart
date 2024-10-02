@@ -13,7 +13,7 @@ class MyLoadingCupertino extends StatelessWidget {
         child: Column(
           children: <Widget>[
             CupertinoButton(
-              child: const Text("Contoh button"),
+              child: const Text("Contoh button Aulia 2241720047"),
               onPressed: () {},
             ),
             const CupertinoActivityIndicator(),

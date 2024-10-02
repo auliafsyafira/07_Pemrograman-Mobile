@@ -78,7 +78,8 @@ Sudah dilakukan diatas.
 
 **Jawab:**
 
-Sudah dilakukan diatas.
+[Menghubungkan aplikasi hello_world pada perangkat fisik](https://github.com/auliafsyafira/07_Pemrograman-Mobile/tree/main/Pertemuan%205#praktikum-2-menghubungkan-perangkat-android-atau-emulator)
+
 
 ---
 
@@ -135,6 +136,12 @@ class MyApp extends StatelessWidget {
 `5.` README.md berisi: capture hasil akhir tiap praktikum (side-by-side, bisa juga berupa file GIF agar terlihat proses perubahan ketika ada aksi dari pengguna) dengan menampilkan NIM dan Nama Anda sebagai ciri pekerjaan Anda.
 
 **Jawab:**
+
+<img src=img/tugas5_2.gif>
+<img src=img/tugas5_3.gif>
+<img src=img/tugas5_4.gif>
+<img src=img/tugas5_5.gif>
+<img src=img/tugas5_6.gif>
 
 ---
 
