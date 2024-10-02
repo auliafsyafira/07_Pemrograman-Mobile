@@ -66,20 +66,23 @@ Karena sebelumnya saya sudah membuat repository, saya akan melanjutkan ke langka
 
 
 # Tugas Praktikum
-1. Selesaikan Praktikum 1 sampai 5, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file README.md!
+`1.` Selesaikan Praktikum 1 sampai 5, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file README.md!
 
 **Jawab:**
 
 Sudah dilakukan diatas.
 
-2. Selesaikan Praktikum 2 dan Anda wajib menjalankan aplikasi hello_world pada perangkat fisik (device Android/iOS) agar Anda mempunyai pengalaman untuk menghubungkan ke perangkat fisik. Capture hasil aplikasi di perangkat, lalu buatlah laporan praktikum pada file README.md.
+---
+
+`2.` Selesaikan Praktikum 2 dan Anda wajib menjalankan aplikasi hello_world pada perangkat fisik (device Android/iOS) agar Anda mempunyai pengalaman untuk menghubungkan ke perangkat fisik. Capture hasil aplikasi di perangkat, lalu buatlah laporan praktikum pada file README.md.
 
 **Jawab:**
 
 Sudah dilakukan diatas.
 
+---
 
-3. Pada praktikum 5 mulai dari Langkah 3 sampai 6, buatlah file widget tersendiri di folder basic_widgets, kemudian pada file main.dart cukup melakukan import widget sesuai masing-masing langkah tersebut!
+`3.` Pada praktikum 5 mulai dari Langkah 3 sampai 6, buatlah file widget tersendiri di folder basic_widgets, kemudian pada file main.dart cukup melakukan import widget sesuai masing-masing langkah tersebut!
 
 **Jawab:**
 ```
@@ -115,9 +118,11 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
-<img src=img/praktikum5_5.png>
+<img src=img/tugas1.jpg>
 
-4. Selesaikan Codelabs: Your first Flutter app, lalu buatlah laporan praktikumnya dan push ke repository GitHub Anda!
+---
+
+`4.` Selesaikan Codelabs: Your first Flutter app, lalu buatlah laporan praktikumnya dan push ke repository GitHub Anda!
 
 **Jawab:**
 
@@ -125,11 +130,15 @@ class MyApp extends StatelessWidget {
 
 <img src=img/namer_app.gif>
 
-5. README.md berisi: capture hasil akhir tiap praktikum (side-by-side, bisa juga berupa file GIF agar terlihat proses perubahan ketika ada aksi dari pengguna) dengan menampilkan NIM dan Nama Anda sebagai ciri pekerjaan Anda.
+---
+
+`5.` README.md berisi: capture hasil akhir tiap praktikum (side-by-side, bisa juga berupa file GIF agar terlihat proses perubahan ketika ada aksi dari pengguna) dengan menampilkan NIM dan Nama Anda sebagai ciri pekerjaan Anda.
 
 **Jawab:**
 
-6. Kumpulkan berupa link repository/commit GitHub Anda kepada dosen yang telah disepakati!
+---
+
+`6.` Kumpulkan berupa link repository/commit GitHub Anda kepada dosen yang telah disepakati!
 
 **Jawab:**
 
