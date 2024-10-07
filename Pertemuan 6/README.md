@@ -178,9 +178,11 @@ body: Column(
 # Praktikum 4: Implementasi image section
 ## **Langkah 1: Siapkan aset gambar**
 Buat folder images lalu taruh file gambar di dalam folder tersebut.
+
 <img src=img/praktikum4_b.png>
 
 Set nama file ke file pubspec.yaml
+
 <img src=img/praktikum4_c.png>
 
 ## **Langkah 2: Tambahkan gambar ke body**
