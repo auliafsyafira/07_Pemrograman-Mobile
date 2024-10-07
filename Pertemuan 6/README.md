@@ -220,3 +220,11 @@ body: ListView(
 ),
 ```
 <img src=img/praktikum4_e.png>
+
+# Tugas Praktikum 1
+1. Selesaikan Praktikum 1 sampai 4, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file README.md!
+* **Jawab:** Praktikum 1-4 sudah dikerjakan diatas.
+
+2. Silakan implementasikan di project baru "basic_layout_flutter" dengan mengakses sumber ini: https://docs.flutter.dev/codelabs/layout-basics
+* **Jawab:**
+3. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
