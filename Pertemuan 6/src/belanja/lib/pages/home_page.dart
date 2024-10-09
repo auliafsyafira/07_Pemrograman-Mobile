@@ -9,6 +9,43 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext) {
-    throw UnimplementedError();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Items List'),
+        backgroundColor: Colors.blue,
+      ),
+      body: Container(
+        margin: const EdgeInsets.all(15),
+        child: ListView.builder(
+          itemCount: items.length,
+          itemBuilder: (context, index) {
+            final item = items[index];
+            return Material(
+              child: InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, '/item', arguments: item);
+                },
+                child: Card(
+                  child: Container(
+                    margin: const EdgeInsets.all(8),
+                    child: Row(
+                      children: [
+                        Expanded(child: Text(item.name.toString())),
+                        Expanded(
+                          child: Text(
+                            item.price.toString(),
+                            textAlign: TextAlign.end,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+      ),
+    );
   }
 }

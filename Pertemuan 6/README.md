@@ -234,7 +234,8 @@ body: ListView(
 # Praktikum 5: Membangun Navigasi di Flutter
 ## **Langkah 1: Siapkan project baru**
 
-Buat project baru dengan nama **belanja** lalu susunan folder seperti gambar berikut:
+Buat project baru dengan nama **belanja** lalu buat susunan folder seperti berikut:
+
 <img src=img/praktikum5_a.png>
 
 ## **Langkah 2: Mendefinisikan Route**
@@ -278,4 +279,47 @@ class HomePage extends StatelessWidget {
 ```
 ## **Langkah 6: Membuat ListView dan itemBuilder**
 ```
+Widget build(BuildContext) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Items List'),
+        backgroundColor: Colors.blue,
+      ),
+      body: Container(
+        margin: const EdgeInsets.all(15),
+        child: ListView.builder(
+          itemCount: items.length,
+          itemBuilder: (context, index) {
+            final item = items[index];
+            return Material(
+              child: InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, '/item', arguments: item);
+                },
+                child: Card(
+                  child: Container(
+                    margin: const EdgeInsets.all(8),
+                    child: Row(
+                      children: [
+                        Expanded(child: Text(item.name.toString())),
+                        Expanded(
+                          child: Text(
+                            item.price.toString(),
+                            textAlign: TextAlign.end,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
 ```
+<img src=img/praktikum5_b.png>
+
+## **LLangkah 7: Menambahkan aksi pada ListView**
