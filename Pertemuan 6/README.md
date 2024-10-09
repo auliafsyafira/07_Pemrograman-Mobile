@@ -226,5 +226,54 @@ body: ListView(
 * **Jawab:** Praktikum 1-4 sudah dikerjakan diatas.
 
 2. Silakan implementasikan di project baru "basic_layout_flutter" dengan mengakses sumber ini: https://docs.flutter.dev/codelabs/layout-basics
-* **Jawab:**
+* **Jawab:** INI MASIH BINGUNG
+
 3. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
+* **Jawab:**
+
+# Praktikum 5: Membangun Navigasi di Flutter
+## **Langkah 1: Siapkan project baru**
+<img src=img/praktikum4_e.png>
+
+## **Langkah 2: Mendefinisikan Route**
+```
+class ItemPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext) {
+    throw UnimplementedError();
+  }
+}
+```
+## **Langkah 3: Lengkapi Kode di main.dart**
+```
+void main() {
+  runApp(MaterialApp(
+    initialRoute: '/',
+    routes: {
+      '/': (context) => HomePage(),
+      '/item': (context) => ItemPage(),
+    }
+  ));
+}
+```
+## **Langkah 4: Membuat data model**
+```
+class Item {
+  String? name;
+  int? price;
+
+  Item({this.name, this.price});
+}
+```
+## **Langkah 5: Lengkapi kode di class HomePage**
+```
+class HomePage extends StatelessWidget {
+  final List<Item> items = [
+    Item(name: 'Sugar', price: 5000),
+    Item(name: 'Salt', price: 2000),
+  ];
+}
+```
+## **Langkah 6: Membuat ListView dan itemBuilder**
+```
+```
