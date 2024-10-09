@@ -1,4 +1,4 @@
-# **Praktikum - Pertemuan 6**
+# **Praktikum - Pertemuan 6 TRYYYY**
 Nama : Aulia Firda Syafira
 
 NIM : 2241720047 (07)
