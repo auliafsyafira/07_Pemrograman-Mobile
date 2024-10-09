@@ -233,7 +233,7 @@ body: ListView(
 
 # Praktikum 5: Membangun Navigasi di Flutter
 ## **Langkah 1: Siapkan project baru**
-<img src=img/praktikum4_e.png>
+<img src=img/praktikum5_a.png>
 
 ## **Langkah 2: Mendefinisikan Route**
 ```
