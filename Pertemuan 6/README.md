@@ -233,6 +233,8 @@ body: ListView(
 
 # Praktikum 5: Membangun Navigasi di Flutter
 ## **Langkah 1: Siapkan project baru**
+
+Buat project baru dengan nama **belanja** lalu susunan folder seperti gambar berikut:
 <img src=img/praktikum5_a.png>
 
 ## **Langkah 2: Mendefinisikan Route**
